@@ -6,14 +6,14 @@ public class Condition {
     private int currentTemperature;
 
     public void decreaseCurrentTemperature() {
-        if (currentTemperature == minTemperature) {
+        if (currentTemperature <= minTemperature) {
             return;
         }
         this.currentTemperature--;
     }
 
     public void increaseCurrentTemperature() {
-        if (currentTemperature == maxTemperature) {
+        if (currentTemperature >= maxTemperature) {
             return;
         }
         this.currentTemperature++;
